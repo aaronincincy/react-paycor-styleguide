@@ -1,0 +1,40 @@
+{
+  "name": "react-paycor-styleguide",
+  "version": "0.1.1",
+  "description": "A set of React components that adhere to the Paycor style guide.",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean-dist": "if exist dist rmdir dist /s /q",
+    "build": "npm run clean-dist && set NODE_ENV=production && babel src -d dist",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "library",
+    "style",
+    "guide",
+    "paycor"
+  ],
+  "author": "Aaron Johnson",
+  "peerDependencies": {
+    "react": "^15.x",
+    "styled-components": "^3.x"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "styled-components": "^3.1.6",
+    "@storybook/react": "^3.3.12",
+    "@storybook/addon-actions": "^3.3.12",
+    "@storybook/addon-links": "^3.3.12",
+    "@storybook/addons": "^3.3.12"
+  },
+  "dependencies": {}
+}
